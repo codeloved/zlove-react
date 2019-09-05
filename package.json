@@ -4,7 +4,8 @@
   "description": "react脚手架",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --config build/index.js",
+    "build": "webpack --config"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,28 @@
   "bugs": {
     "url": "https://github.com/codeloved/zlove-react/issues"
   },
-  "homepage": "https://github.com/codeloved/zlove-react#readme"
+  "homepage": "https://github.com/codeloved/zlove-react#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.0.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  }
 }
