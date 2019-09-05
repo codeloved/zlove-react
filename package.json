@@ -1,0 +1,26 @@
+{
+  "name": "zlove-react",
+  "version": "1.0.0",
+  "description": "react脚手架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeloved/zlove-react.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "react-router",
+    "redux-saga",
+    "react-redux"
+  ],
+  "author": "zcc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeloved/zlove-react/issues"
+  },
+  "homepage": "https://github.com/codeloved/zlove-react#readme"
+}
