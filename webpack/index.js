@@ -31,7 +31,10 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['*', '.js', '.jsx'],
+    alias: {
+      "@": path.resolve(__dirname, '../src')
+    }
   },
   devServer: {
     contentBase: path.join(__dirname, "../public/"), //静态服务器地址  默认访问localhost:port会返回index.html文件,或者使用具体地址访问文件

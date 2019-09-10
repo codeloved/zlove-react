@@ -14,6 +14,7 @@ module.exports = function (api) {
         },
         //usage不需要在入口的开头引入整个pollfill,会根据项目使用且targets缺失的引入相应的pollfill
         useBuiltIns: "usage",
+        // @babel/polyfill依赖core-js手动升级到@3
         corejs: 3
       },
     ],
