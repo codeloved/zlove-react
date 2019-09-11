@@ -1,6 +1,7 @@
 import Login from '@/pages/login/login'
 import NotFound from '@/pages/error/404'
 import Home from '@/pages/home/index'
+import Todo from '@/pages/todo/index'
 
 const routers = [
   {
@@ -12,6 +13,11 @@ const routers = [
     path: '/login',
     exact: false,
     component: Login
+  },
+  {
+    path: 'todo',
+    exact: false,
+    component: Todo
   },
   {
     exact: false,
