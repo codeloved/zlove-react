@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/codeloved/zlove-react#readme",
   "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.6.0",
     "@babel/polyfill": "^7.4.4",
     "core-js": "^3.2.1",
     "react": "^16.9.0",

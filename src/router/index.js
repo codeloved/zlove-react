@@ -15,7 +15,7 @@ const routers = [
     component: Login
   },
   {
-    path: 'todo',
+    path: '/todo',
     exact: false,
     component: Todo
   },
