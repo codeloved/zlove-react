@@ -26,7 +26,7 @@ export const getTodosRequest = (payload) =>({
   payload
 })
 
-export const getTodosRequest = (payload) =>({
+export const todosRequestFail = (payload) =>({
   type: TODOS_REQUEST_FAIL,
   payload
 })
