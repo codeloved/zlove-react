@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './index.css'
 import { connect } from 'react-redux'
-import { add, reduce } from '@/action/todo/index'
+import { add, reduce, getTodos } from '@/action/todo/index'
 
 @connect(({todo}) => ({
   count: todo.count
@@ -23,6 +23,12 @@ class Todo extends Component {
       count: count -2
     }))
   }
+  getTodos = () => {
+    const { dispatch } = this.props
+    dispatch(getTodos({
+      id: 1
+    }))
+  }
   render() {
     const { count } = this.props
     return(
@@ -30,6 +36,9 @@ class Todo extends Component {
         <div>{count}</div>
         <div onClick={this.add}>+</div>
         <div onClick={this.reduce}>-</div>
+        <br/>
+        <div onClick={this.getTodos}>获取todo</div>
+
       </div>
     )
   }

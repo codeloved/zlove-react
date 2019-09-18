@@ -21,7 +21,7 @@ export const getTodosRequest = (payload) =>({
   payload
 })
 
-export const getTodosRequest = (payload) =>({
+export const todosRequestSuccess = (payload) =>({
   type: TODOS_REQUEST_SUCCESS,
   payload
 })
