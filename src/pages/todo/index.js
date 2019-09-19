@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import './index.css'
 import { connect } from 'react-redux'
-import { add, reduce, getTodos } from '@/action/todo/index'
+import { add, reduce, getTodosRequest } from '@/action/todo/index'
 
 @connect(({todo}) => ({
-  count: todo.count
+  count: todo.count,
+  todoData: todo.todoData
 }))
 class Todo extends Component {
   constructor(props) {
@@ -25,20 +26,27 @@ class Todo extends Component {
   }
   getTodos = () => {
     const { dispatch } = this.props
-    dispatch(getTodos({
+    debugger
+    dispatch(getTodosRequest({
       id: 1
     }))
+  }
+  renderTodos = () => {
+    const { todoData } = this.props
+    todoData.map(item => (<li key={item.value}>{item.name}</li>))
   }
   render() {
     const { count } = this.props
     return(
       <div>
         <div>{count}</div>
-        <div onClick={this.add}>+</div>
-        <div onClick={this.reduce}>-</div>
+        <div className='cursor' onClick={this.add}>+</div>
+        <div className='cursor' onClick={this.reduce}>-</div>
         <br/>
-        <div onClick={this.getTodos}>获取todo</div>
-
+        <div className='cursor' onClick={this.getTodos}>获取todo</div>
+        <br/>
+        <div>渲染todos</div>
+        <ul>{this.renderTodos()}</ul>
       </div>
     )
   }
