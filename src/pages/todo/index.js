@@ -26,14 +26,13 @@ class Todo extends Component {
   }
   getTodos = () => {
     const { dispatch } = this.props
-    debugger
     dispatch(getTodosRequest({
       id: 1
     }))
   }
   renderTodos = () => {
     const { todoData } = this.props
-    todoData.map(item => (<li key={item.value}>{item.name}</li>))
+    return todoData.map(item => (<li key={item.value}>{item.name}</li>))
   }
   render() {
     const { count } = this.props

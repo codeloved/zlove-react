@@ -31,9 +31,9 @@ function* getTodos(action) {
   }
 }
 
-function* todoSage() {
+function* todoSaga() {
   //每次触发此action(GET_TODOS_REQUEST)会调用getTodos
-  takeEvery(GET_TODOS_REQUEST, getTodos)
+  yield takeEvery(GET_TODOS_REQUEST, getTodos)
 }
 
-export default todoSage
+export default todoSaga
