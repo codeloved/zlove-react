@@ -12,7 +12,7 @@ const routers = [
   {
     path: '/login',
     exact: false,
-    component: Login
+    component: Login,
   },
   {
     path: '/todo',
