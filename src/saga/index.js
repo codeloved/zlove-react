@@ -1,5 +1,5 @@
-import todoSaga from './todo/index'
+import todoSaga from './todo/index';
 
 export default {
-  todoSaga
-}
+  todoSaga,
+};
