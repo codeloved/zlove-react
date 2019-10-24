@@ -6,27 +6,27 @@ export const TODOS_REQUEST_SUCCESS = 'TODOS_REQUEST_SUCCESS_TODO';
 export const TODOS_REQUEST_FAIL = 'TODOS_REQUEST_FAIL_TODO';
 
 // action创建函数
-export const add = (payload) => ({
+export const add = payload => ({
   type: ADD,
   payload,
 });
 
-export const reduce = (payload) => ({
+export const reduce = payload => ({
   type: REDUCE,
   payload,
 });
 
-export const getTodosRequest = (payload) =>({
+export const getTodosRequest = payload => ({
   type: GET_TODOS_REQUEST,
   payload,
 });
 
-export const todosRequestSuccess = (payload) =>({
+export const todosRequestSuccess = payload => ({
   type: TODOS_REQUEST_SUCCESS,
   payload,
 });
 
-export const todosRequestFail = (payload) =>({
+export const todosRequestFail = payload => ({
   type: TODOS_REQUEST_FAIL,
   payload,
 });
